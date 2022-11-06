@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="side-menu">
+        <button class="menu-button" onClick="addRow()">Add Row</button>
+        <button class="menu-button" onClick="addColumn()">Add Column</button>
+        <button class="menu-button" onClick="removeRow()">Remove Row</button>
+        <button class="menu-button" onClick="removeColumn()">Remove Column</button>
+        <div class="dropdown">
+            <button class="menu-button">Color Selection</button>
+            <select class="color-options" id="drop">
+                <a onClick="pickNeonGreen()" class = "color-options" id = "neonGreen">Neon Green</a>
+            </select>
+            <div class="color-options" id="drop">
+                <a onClick="pickNeonGreen()" id="neonGreen">Neon Green</a>
+                <a onClick="pickPurple()" id="purple">Purple</a>
+                <a onClick="colorRevert()" id="gray">Reset</a>
+            </div>
+        </div>
+        <button class="menu-button" onClick="fillAllUncolored()">Fill All Uncolored Cells</button>
+        <button class="menu-button" onClick="fillAllCells()">Fill All Cells</button>
+        <button class="menu-button" onClick="clearAllCells()">Clear All Cells</button>
+        <u id="CC">Color: Gray</u>
+    </section>
+
+    <table id="grid"></table>
+</body>
+
+</html>
